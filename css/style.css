@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 17px;
+    line-height: 1.88em;
+    font-weight: 400;
+    background-image: url(../img/fondo_doce.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+/** Globales **/
+h1, h2, h3 {
+    font-family: 'Caudex', serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+.text_center {
+    text-align: center;
+}
+main {
+    background-image: url(../img/DOCE_MAIN.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem;
+}
+@media (min-width: 768px) {
+    main {
+        background-image: url(../img/DOCE_MAIN.png);
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        width: 100%;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-delay: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: initial;
+    }
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/** Header **/
+.header {
+    height: 248px;
+    width: 100%;
+    background-color: #F0D6E3;
+}
+
+
+@media (min-width: 768px) {
+.logo {
+    text-align: center;
+}
+}
+@media only screen and (max-width: 768px) {
+    .logo-barra {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.navegacion {
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    display: block;
+}
+.navegacion_enlaces {
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    color: #48194F;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.navegacion ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+@media (min-width: 768px) {
+.navegacion ul li {
+    display: inline-block;
+    margin: 0 29px;
+}
+}
+.navegacion_enlaces:hover {
+    color: #EE8FA5;
+}
+
+.section_title {
+    font-family: Caudex,sans-serif;
+    font-weight: 400;
+    color: #EE8FA5;
+    font-size: 42px;
+    line-height: 1.17em;
+    margin: 25px 0;
+    text-align: center;
+}
+.productos_index {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.productos_inicio {
+    border: 2px solid #EE8FA5;
+    height: 300px;
+    margin: 1rem;
+}
+
+.productos_inicio:hover {
+    transform: scale(1.05);
+    transition: all 0.9s;
+    box-shadow: 2px 2px 5px #333;
+}
+
+#producto1 {
+    background-image: url(../img/UnaPorcion.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#producto2 {
+    background-image: url(../img/cheesecake_arandanos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#producto3 {
+    background-image: url(../img/cheesecake_frutos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#producto4 {
+    background-image: url(../img/cheesecake_newyork.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .productos_index {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .productos_index {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+#sec1 {
+    background-image: url(../img/fotocarnet.png);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin: 1rem;
+}
+#sec2 {
+    background-image: url(../img/pronto.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: 1rem;
+}
+.section_bot {
+    height: auto;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+}
+@media only screen and (min-width: 768px) {
+.section_bot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+}
+.imagen-contacto {
+    height: auto;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+}
+.contenido-contacto {
+    align-self: start;
+}
+@media only screen and (min-width: 768px) {
+    .imagen-contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+    }
+    }
+.footer {
+    background-color: #F0D6E3;
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    min-height: 80px;
+    width: 100%;
+    color: #fff;
+}
+.footer p {
+font-size: 20px;
+}
+.footer_redes {
+    font-size: 40px;
+    color: #48194F;;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: 20px;
+}
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: #C6B5D8;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    color: #48194F;
+    border: 3px solid #48194F;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #9657A2;
+}
+.boton {
+    padding: 5px;
+    border: 1px solid #333;
+    background-color: #C6B5D8;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+/* Productos */
+.productos {
+    text-align: center;
+    padding: 20px;
+}
+
+#cheesecakes {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+#cheesecakes {
+    display: grid;
+    grid-template-areas: "frambuesa newyork newyork" "frambuesa arandanos frutos" "frambuesa choco frutos" "fresa fresa fresa";
+    grid-template-rows: 200px 220px 220px 250px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+}
+.cakes {
+   border: 1px solid #EE8FA5; 
+   margin: 20px;
+}
+
+.cakes:hover {
+    transform: scale(1.05);
+    transition: all 0.7s;
+}
+
+.cheese_title {
+    font-family: Caudex,sans-serif;
+    font-weight: 400;
+    color: #9657A2;
+    font-size: 42px;
+    line-height: 1.17em;
+    margin: 25px 0;
+    text-align: center;
+}
+@media only screen and (max-width: 380px) {
+    .cheese_title {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 250px) {
+    .cheese_title {
+        font-size: 16px;
+    }
+}
+
+
+#frambuesa {
+    grid-area: frambuesa;
+    background-image: url(../img/cheesecake_frambuesa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#newyork {
+    grid-area: newyork;
+    background-image: url(../img/cheesecake_newyork.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#arandanos {
+    grid-area: arandanos;
+    background-image: url(../img/cheesecake_arandanos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#frutos {
+    grid-area: frutos;
+    background-image: url(../img/cheesecake_frutos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#choco {
+    grid-area: choco;
+    background-image: url(../img/cheesecake_chocolate.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#fresa {
+    grid-area: fresa;
+    background-image: url(../img/cheesecake_fresa.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.table {
+    text-align: -webkit-center;
+}
+/* NOSOTROS */
+.nosotros {
+    text-align: center;
+    color: #48194F;
+}
+@media only screen and (min-width: 768px) {
+.acticle_text {
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+}
+@media only screen and (min-width: 768px) {
+    .article { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* RECETAS */
+.recetas {
+    text-align: center;
+    color: #48194F;
+}
+@media only screen and (min-width: 768px) {
+    .recetas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.section_recetas {
+    background-image: url(../img/DOCExo.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+/* CONTACTO */
+.contacto {
+    text-align: center;
+    color: #48194F;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
