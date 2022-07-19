@@ -371,6 +371,26 @@ font-size: 20px;
     text-align: center;
     color: #48194F;
 }
+.acticle_text {
+    background-color: #48194f;
+    background-image: linear-gradient(43deg, #48194f 0%, #9657a2 17%, #c6b5d8 39%, #ee8fa5 60%, #f0d6e3 80%);
+}
+
+.animate__bounceInLeft {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.animate__rubberBand {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
 @media only screen and (min-width: 768px) {
 .acticle_text {
     padding-top: 1rem;
