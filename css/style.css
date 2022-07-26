@@ -185,7 +185,7 @@ p {
 } */
 
 #sec1 {
-  background-image: url(../img/fotocarnet.png);
+  background-image: url(../img/portrait-woman.jpg);
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -402,18 +402,18 @@ p {
   animation: bounce; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .acticle_text {
     padding-top: 1rem;
     margin-top: 1rem;
   }
-}
-@media only screen and (min-width: 768px) {
+} */
+/* @media only screen and (min-width: 768px) {
   .article {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
+} */
 
 /* RECETAS */
 .recetas {
