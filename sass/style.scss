@@ -1,0 +1,464 @@
+$violeta: #48194F;
+$violetaClaro: #9657A2;
+$lila: #C6B5D8;
+$rosa: #EE8FA5;
+$rosaPastel: #F0D6E3;
+$blanco: #FFFFFF;
+$negro: #000000;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Catamaran", sans-serif;
+    font-size: 17px;
+    line-height: 1.88em;
+    font-weight: 400;
+    background-image: url(../img/fondo_doce.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  /** Globales **/
+  h1,
+  h2,
+  h3 {
+    font-family: "Caudex", serif;
+    font-weight: 400;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .text_center {
+    text-align: center;
+  }
+  
+  /** Header **/
+  .header {
+    width: 100%;
+    min-height: 200px;
+  }
+  
+  .bg-color {
+    background-color: $rosaPastel;
+    color: $rosaPastel;
+  }
+  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar-brand {
+      float: left;
+      height: 180px;
+      padding: 15px 15px;
+      font-size: 18px;
+      line-height: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+      display: flex;
+      flex-basis: auto;
+      justify-content: center;
+    }
+  }
+  
+  
+  .nav-link {
+    color: $violeta;
+    font-family: "Catamaran", sans-serif;
+  }
+  .nav-link:hover {
+      color: $rosa;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      justify-content: center;
+    }
+  }
+  .navbar-nav {
+    align-items: center;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(72, 25, 79)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-toggler {
+    border-color: rgb(72, 25, 79);
+  }
+  /* main {
+    background-image: url(../img/DOCE_MAIN.png);
+    background-size: cover;
+    background-position: center;
+    max-height: 700px;
+    width: 100%;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: initial
+  }
+  @media (min-width: 768px) {
+    main {
+      height: 700px;
+      width: 100%;
+    ; 
+    } 
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  } */
+  .section_title {
+    font-family: Caudex, sans-serif;
+    font-weight: 400;
+    color: $rosa;
+    font-size: 42px;
+    line-height: 1.17em;
+    margin: 25px 0;
+    text-align: center;
+  }
+  .productos_index {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .productos_inicio {
+    border: 2px solid #ee8fa5;
+    height: 300px;
+    margin: 1rem;
+  }
+  
+  .productos_inicio:hover {
+    transform: scale(1.05);
+    transition: all 0.9s;
+    box-shadow: 2px 2px 5px #333;
+  }
+  
+  #producto1 {
+    background-image: url(../img/UnaPorcion.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #producto2 {
+    background-image: url(../img/cheesecake_arandanos.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #producto3 {
+    background-image: url(../img/cheesecake_frutos.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #producto4 {
+    background-image: url(../img/cheesecake_newyork.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* @media only screen and (min-width: 600px) {
+    .productos_index {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .productos_index {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  } */
+  
+  #sec1 {
+    background-image: url(../img/portrait-woman.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin: 1rem;
+  }
+  #sec2 {
+    background-image: url(../img/UnaPorcion.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin: 1rem;
+  }
+  .section_bot {
+    height: auto;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  /* @media only screen and (min-width: 768px) {
+    .section_bot {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-content: center;
+      justify-content: space-around;
+      align-items: center;
+      justify-items: center;
+    }
+  } */
+  .imagen-contacto {
+    height: auto;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .contenido-contacto {
+    align-self: start;
+  }
+  /* @media only screen and (min-width: 768px) {
+    .imagen-contacto {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-content: center;
+      justify-content: space-around;
+      align-items: center;
+      justify-items: center;
+    }
+  } */
+  .footer {
+    background-color: $rosaPastel;
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    min-height: 80px;
+    width: 100%;
+    color: $blanco;
+  }
+  .footer p {
+    font-size: 20px;
+  }
+  .footer_redes {
+    font-size: 40px;
+    color: $violeta;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: 20px;
+  }
+  
+  .subir {
+    height: 40px;
+    width: 40px;
+    background-color: $lila;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    color: $violeta;
+    border: 3px solid #48194F;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #9657a2;
+  }
+  .boton {
+    padding: 5px;
+    border: 1px solid #333;
+    background-color: $lila;
+    border-radius: 6px;
+    margin-top: 1rem;
+  }
+  /* Productos */
+  .productos {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #cheesecakes {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    #cheesecakes {
+      display: grid;
+      grid-template-areas: "frambuesa newyork newyork" "frambuesa arandanos frutos" "frambuesa choco frutos" "fresa fresa fresa";
+      grid-template-rows: 200px 220px 220px 250px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .cakes {
+    border: 1px solid #ee8fa5;
+    margin: 20px;
+  }
+  
+  .cakes:hover {
+    transform: scale(1.05);
+    transition: all 0.7s;
+  }
+  
+  .cheese_title {
+    font-family: Caudex, sans-serif;
+    font-weight: 400;
+    color: $violetaClaro;
+    font-size: 42px;
+    line-height: 1.17em;
+    margin: 25px 0;
+    text-align: center;
+  }
+  @media only screen and (max-width: 380px) {
+    .cheese_title {
+      font-size: 22px;
+    }
+  }
+  @media only screen and (max-width: 250px) {
+    .cheese_title {
+      font-size: 16px;
+    }
+  }
+  
+  #frambuesa {
+    grid-area: frambuesa;
+    background-image: url(../img/cheesecake_frambuesa.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #newyork {
+    grid-area: newyork;
+    background-image: url(../img/cheesecake_newyork.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #arandanos {
+    grid-area: arandanos;
+    background-image: url(../img/cheesecake_arandanos.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #frutos {
+    grid-area: frutos;
+    background-image: url(../img/cheesecake_frutos.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #choco {
+    grid-area: choco;
+    background-image: url(../img/cheesecake_chocolate.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #fresa {
+    grid-area: fresa;
+    background-image: url(../img/cheesecake_fresa.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .table {
+    text-align: -webkit-center;
+  }
+  /* NOSOTROS */
+  .nosotros {
+    text-align: center;
+    color: $violeta;
+  }
+  .acticle_text {
+    background-color: $violeta;
+    background-image: linear-gradient(
+      43deg,
+      #48194F 0%,
+      #9657a2 17%,
+      #c6b5d8 39%,
+      #ee8fa5 60%,
+      #f0d6e3 80%
+    );
+  }
+  
+  .animate__bounceInLeft {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+  
+  .animate__rubberBand {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+  /* @media only screen and (min-width: 768px) {
+    .acticle_text {
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+  } */
+  /* @media only screen and (min-width: 768px) {
+    .article {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  } */
+  
+  /* RECETAS */
+  .recetas {
+    text-align: center;
+    color: $violeta;
+  }
+  /* @media only screen and (min-width: 768px) {
+    .recetas {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .section_recetas {
+    background-image: url(../img/DOCExo.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+  } */
+  
+  /* CONTACTO */
+  .contacto {
+    text-align: center;
+    color: $violeta;
+    width: 100%;
+    height: auto;
+    margin: 2rem 0 0 0;
+  }
+  .form {
+    width: 600px;
+    margin: 0 1rem 1rem 10rem;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .contacto {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
