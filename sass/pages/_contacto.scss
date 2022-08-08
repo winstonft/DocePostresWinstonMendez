@@ -1,0 +1,19 @@
+.contacto {
+    text-align: center;
+    color: map-get($paletaDeColores, violeta);
+    width: 100%;
+    height: auto;
+    margin: 2rem 0 0 0;
+}
+
+.form {
+    width: 600px;
+    margin: 0 1rem 1rem 10rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

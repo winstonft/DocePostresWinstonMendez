@@ -1,0 +1,97 @@
+.productos {
+    text-align: center;
+    padding: 20px;
+}
+
+#cheesecakes {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    #cheesecakes {
+        display: grid;
+        grid-template-areas: "frambuesa newyork newyork""frambuesa arandanos frutos""frambuesa choco frutos""fresa fresa fresa";
+        grid-template-rows: 200px 220px 220px 250px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.cakes {
+    border: 1px solid #ee8fa5;
+    margin: 20px;
+}
+
+.cakes:hover {
+    transform: scale(1.05);
+    transition: all 0.7s;
+}
+
+.cheese_title {
+    font-family: Caudex, sans-serif;
+    font-weight: 400;
+    color: map-get($paletaDeColores, violetaClaro);
+    font-size: 42px;
+    line-height: 1.17em;
+    margin: 25px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 380px) {
+    .cheese_title {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .cheese_title {
+        font-size: 16px;
+    }
+}
+
+#frambuesa {
+    grid-area: frambuesa;
+    background-image: url(../img/cheesecake_frambuesa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#newyork {
+    grid-area: newyork;
+    background-image: url(../img/cheesecake_newyork.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#arandanos {
+    grid-area: arandanos;
+    background-image: url(../img/cheesecake_arandanos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#frutos {
+    grid-area: frutos;
+    background-image: url(../img/cheesecake_frutos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#choco {
+    grid-area: choco;
+    background-image: url(../img/cheesecake_chocolate.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#fresa {
+    grid-area: fresa;
+    background-image: url(../img/cheesecake_fresa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.table {
+    text-align: -webkit-center;
+}

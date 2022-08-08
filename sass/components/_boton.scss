@@ -1,0 +1,18 @@
+.boton {
+    padding: 5px;
+    border: 1px solid #48194F;
+    background-color: map-get($paletaDeColores, lila);
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+
+.btn-enviar {
+    @extend .boton;
+    width: 100px;
+    background-color: map-get($paletaDeColores, rosaPastel);
+}
+
+.btn-limpiar {
+    @extend .boton;
+}

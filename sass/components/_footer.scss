@@ -1,0 +1,21 @@
+.footer {
+    background-color: map-get($paletaDeColores, rosaPastel);
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    min-height: 80px;
+    width: 100%;
+    color: map-get($paletaDeColores, blanco);
+
+    &__redes {
+        font-size: 40px;
+        color: map-get($paletaDeColores, violeta);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        letter-spacing: 20px;
+    }
+}
+
+.footer p {
+    font-size: 20px;
+}
