@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Catamaran", sans-serif;
@@ -14,21 +16,25 @@ body {
   background-image: url(../img/fondo_doce.png);
   background-size: cover;
   background-position: center;
-  background-repeat: repeat; }
+  background-repeat: repeat;
+}
 
 /** Globales **/
 h1,
 h2,
 h3 {
   font-family: "Caudex", serif;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 p {
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .navbar > .container,
 .navbar > .container-fluid,
@@ -40,51 +46,62 @@ p {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .navbar-brand {
   float: left;
   height: 180px;
   font-size: 18px;
-  line-height: 20px; }
+  line-height: 20px;
+}
 
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-collapse {
     display: flex;
     flex-basis: auto;
-    justify-content: center; } }
-
+    justify-content: center;
+  }
+}
 .nav-link {
   color: #FFFFFF;
   font-family: "Catamaran", sans-serif;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .nav-link:hover {
-  color: #EE8FA5; }
+  color: #EE8FA5;
+}
 
 @media (max-width: 768px) {
   .navbar-collapse {
-    justify-content: center; } }
-
+    justify-content: center;
+  }
+}
 .navbar-nav {
-  align-items: center; }
+  align-items: center;
+}
 
 .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(72, 25, 79)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(72, 25, 79)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 .navbar-toggler {
-  border-color: #48194f; }
+  border-color: rgb(72, 25, 79);
+}
 
-.boton, .btn-enviar, .btn-limpiar {
+.boton, .btn-limpiar, .btn-enviar {
   padding: 5px;
   border: 1px solid #48194F;
   background-color: #C6B5D8;
   border-radius: 6px;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+}
 
 .btn-enviar {
   width: 100px;
-  background-color: #F0D6E3; }
+  background-color: #F0D6E3;
+}
 
 .footer {
   background-color: #F0D6E3;
@@ -93,28 +110,45 @@ p {
   text-transform: capitalize;
   min-height: 80px;
   width: 100%;
-  color: #FFFFFF; }
-  .footer__redes {
-    font-size: 40px;
-    color: #48194F;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    letter-spacing: 20px; }
+  color: #FFFFFF;
+}
+.footer__redes {
+  font-size: 40px;
+  color: #48194F !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  letter-spacing: 20px;
+}
 
 .footer p {
-  font-size: 20px; }
+  font-size: 20px;
+}
+
+.footer__redes a {
+  color: #48194F !important;
+  text-decoration: none;
+}
+
+.footer__redes a:hover {
+  color: #9657A2 !important;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .text_center {
-  text-align: center; }
+  text-align: center;
+}
 
 /** Header **/
 .header {
   width: 100%;
-  min-height: 195px; }
+  min-height: 195px;
+}
 
 .bg-color {
   background-color: #F0D6E3;
-  color: #F0D6E3; }
+  color: #F0D6E3;
+}
 
 /** INDEX **/
 .section_title {
@@ -124,71 +158,84 @@ p {
   font-size: 42px;
   line-height: 1.17em;
   margin: 25px 0;
-  text-align: center; }
+  text-align: center;
+}
 
 .productos_index {
   height: auto;
   width: 100%;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 .productos_inicio {
   border: 2px solid #ee8fa5;
   height: 300px;
-  margin: 1rem; }
+  margin: 1rem;
+}
 
 .productos_inicio:hover {
   transform: scale(1.05);
   transition: all 0.9s;
-  box-shadow: 2px 2px 5px #333; }
+  box-shadow: 2px 2px 5px #333;
+}
 
 #producto1 {
   background-image: url(../img/UnaPorcion.png);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 #producto2 {
   background-image: url(../img/cheesecake_arandanos.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 #producto3 {
   background-image: url(../img/cheesecake_frutos.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 #producto4 {
   background-image: url(../img/cheesecake_newyork.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 #sec1 {
   background-image: url(../img/portrait-woman.jpg);
   background-size: cover;
   background-position: center;
   height: 600px;
-  margin: 1rem; }
+  margin: 1rem;
+}
 
 #sec2 {
   background-image: url(../img/UnaPorcion.png);
   background-size: cover;
   background-position: center;
   height: 600px;
-  margin: 1rem; }
+  margin: 1rem;
+}
 
 .section_bot {
   height: auto;
   width: 100%;
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 .imagen-contacto {
   height: auto;
   width: 100%;
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 .contenido-contacto {
-  align-self: start; }
+  align-self: start;
+}
 
 .subir {
   height: 40px;
@@ -203,32 +250,38 @@ p {
   color: #48194F;
   border: 3px solid #48194F;
   border-radius: 50px;
-  box-shadow: 0 0 5px #9657a2; }
+  box-shadow: 0 0 5px #9657a2;
+}
 
 /* Productos */
 .productos {
   text-align: center;
-  padding: 20px; }
+  padding: 20px;
+}
 
 #cheesecakes {
   width: 100%;
   height: auto;
-  margin: 1rem; }
+  margin: 1rem;
+}
 
 @media only screen and (min-width: 768px) {
   #cheesecakes {
     display: grid;
     grid-template-areas: "frambuesa newyork newyork" "frambuesa arandanos frutos" "frambuesa choco frutos" "fresa fresa fresa";
     grid-template-rows: 200px 220px 220px 250px;
-    grid-template-columns: 1fr 1fr 1fr; } }
-
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .cakes {
   border: 1px solid #ee8fa5;
-  margin: 20px; }
+  margin: 20px;
+}
 
 .cakes:hover {
   transform: scale(1.05);
-  transition: all 0.7s; }
+  transition: all 0.7s;
+}
 
 .cheese_title {
   font-family: Caudex, sans-serif;
@@ -237,63 +290,75 @@ p {
   font-size: 42px;
   line-height: 1.17em;
   margin: 25px 0;
-  text-align: center; }
+  text-align: center;
+}
 
 @media only screen and (max-width: 380px) {
   .cheese_title {
-    font-size: 22px; } }
-
+    font-size: 22px;
+  }
+}
 @media only screen and (max-width: 250px) {
   .cheese_title {
-    font-size: 16px; } }
-
+    font-size: 16px;
+  }
+}
 #frambuesa {
   grid-area: frambuesa;
   background-image: url(../img/cheesecake_frambuesa.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 #newyork {
   grid-area: newyork;
   background-image: url(../img/cheesecake_newyork.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 #arandanos {
   grid-area: arandanos;
   background-image: url(../img/cheesecake_arandanos.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 #frutos {
   grid-area: frutos;
   background-image: url(../img/cheesecake_frutos.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 #choco {
   grid-area: choco;
   background-image: url(../img/cheesecake_chocolate.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 #fresa {
   grid-area: fresa;
   background-image: url(../img/cheesecake_fresa.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 .table {
-  text-align: -webkit-center; }
+  text-align: -webkit-center;
+}
 
 /* NOSOTROS */
 .nosotros {
   text-align: center;
-  color: #48194F; }
+  color: #48194F;
+}
 
 .acticle_text {
   background-color: #48194F;
-  background-image: linear-gradient(43deg, #48194F 0%, #9657a2 17%, #c6b5d8 39%, #ee8fa5 60%, #f0d6e3 80%); }
+  background-image: linear-gradient(43deg, #48194F 0%, #9657a2 17%, #c6b5d8 39%, #ee8fa5 60%, #f0d6e3 80%);
+}
 
 .animate__bounceInLeft {
   display: inline-block;
@@ -301,7 +366,8 @@ p {
   animation: bounce;
   /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
-  /* don't forget to set a duration! */ }
+  /* don't forget to set a duration! */
+}
 
 .animate__rubberBand {
   display: inline-block;
@@ -309,12 +375,14 @@ p {
   animation: bounce;
   /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
-  /* don't forget to set a duration! */ }
+  /* don't forget to set a duration! */
+}
 
 /* RECETAS */
 .recetas {
   text-align: center;
-  color: #48194F; }
+  color: #48194F;
+}
 
 /* CONTACTO */
 .contacto {
@@ -322,13 +390,19 @@ p {
   color: #48194F;
   width: 100%;
   height: auto;
-  margin: 2rem 0 0 0; }
+  margin: 2rem 0 0 0;
+}
 
 .form {
   width: 600px;
-  margin: 0 1rem 1rem 10rem; }
+  margin: 0 1rem 1rem 10rem;
+}
 
 @media only screen and (min-width: 768px) {
   .contacto {
     display: grid;
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

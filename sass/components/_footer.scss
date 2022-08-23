@@ -9,7 +9,7 @@
 
     &__redes {
         font-size: 40px;
-        color: map-get($paletaDeColores, violeta);
+        color: map-get($paletaDeColores, violeta) !important;
         padding-top: 1rem;
         padding-bottom: 1rem;
         letter-spacing: 20px;
@@ -18,4 +18,14 @@
 
 .footer p {
     font-size: 20px;
+}
+.footer__redes a {
+    color: map-get($paletaDeColores, violeta) !important;
+    text-decoration: none;
+}
+
+.footer__redes a:hover {
+    color: map-get($paletaDeColores, violetaClaro) !important;
+    text-decoration:none; 
+    cursor:pointer;  
 }
